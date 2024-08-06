@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    #garden {
+        height: 400px; /* 모바일에서 정원 높이 조정 */
+    }
+
+    #plant-container {
+        flex-wrap: wrap;
+    }
+
+    .plant {
+        margin: 5px;
+    }
+
+    .controls button {
+        padding: 10px; /* 버튼 크기 증가 */
+    }
+}
+
+/* 터치 기기에서의 드래그 동작을 위한 추가 스타일 */
+.dragging {
+    opacity: 0.5;
+    position: absolute !important;
+    z-index: 100;
+}

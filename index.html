@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독립운동가 정원 만들기</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css">
+</head>
+<body>
+    <h1>독립운동가 정원 만들기</h1>
+    <div id="garden">
+        <div id="plant-container">
+            <img src="담쟁이덩굴.jpg" class="plant" draggable="true" alt="담쟁이덩굴">
+            <img src="붉은병꽃나무.jpg" class="plant" draggable="true" alt="붉은병꽃나무">
+            <img src="질경이.jpg" class="plant" draggable="true" alt="질경이">
+            <img src="선씀바귀.jpg" class="plant" draggable="true" alt="선씀바귀">
+            <img src="까락골.jpg" class="plant" draggable="true" alt="까락골">
+        </div>
+    </div>
+    
+    <div class="controls" style="display: none;">
+        <button onclick="rotatePlant(-15)">↺</button>
+        <button onclick="rotatePlant(15)">↻</button>
+        <button onclick="resizePlant(1.1)">+</button>
+        <button onclick="resizePlant(0.9)">-</button>
+        <button onclick="removePlant()">🗑️</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="mobile-support.js"></script>
+</body>
+</html>
